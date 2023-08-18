@@ -18,7 +18,7 @@
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Triangle card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="triangle.png" alt="rectangle" /></figure>
+                    <figure><img src="triangle.png" alt="triangle" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Triangle</h2>
                       <p>Area (A) = 0.5 X b X h </p>
@@ -34,14 +34,19 @@
                   </div>
                 <!--  rectangle card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="rectangle.png" alt="rectangle.png" /></figure>
+                    <figure><img src="rectangle.png" alt="rectangle" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">rectangle</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <h2 class="card-title">Rectangle</h2>
+                      <p>Area (A) = w X l </p>
+                      <p>
+                        <input type="text" class="border w-24 bg-gray-200 px-1 py-1 text-xl"placeholder="w" id="rectangle-width"> <span>cm</span>
+                        <input type="text" class="border w-24  bg-gray-200 px-1 py-1 text-xl " placeholder="l" id="rectangle-length"> <span>cm</span>
+                      </p>
+                      <p>Area: <span id="rectangle-area">0</span> <span>cm <sup>2</sup></span></p>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="calculateRectangleArea()" class="btn btn-primary w-80">Calculate</button>
                       </div>
-                    </div>
+                    </div> 
                   </div>
                 <!-- parallelogram card-->
                 <div class="card w-96 bg-base-100 shadow-xl">
